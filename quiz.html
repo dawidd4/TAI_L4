@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dawid Karwat Pure</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="javascript:void(0)">Dawid Karwat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Strona Główna</a>
+                <a class="nav-item nav-link" href="javascript:void(0)">Blog</a>
+                <a class="nav-item nav-link active" href="quiz.html">Quiz <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card quiz-container mx-auto">
+                    <div class="card-header progress invisible">
+                        <div class="progress-bar" style="width: 0%;">0/10</div>
+                    </div>
+
+                    <div class="card-body questions" id="question-start">
+                        <h5 class="card-title text-center">Wielki Quiz</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Quiz sprawdzający zbędną wiedzę.</h6>
+                        <p class="card-text">Quiz składa się z 10 pytań.
+                            Dane osobowe nie są zbierane, jedynie wyniki w historii przeglądarki. Jest to
+                            tylko przykładowy, anonimowy test. </p>
+                        <p class="card-text">Kliknij <strong>Start</strong>, by rozpocząć test.</p>
+                        <a href="javascript:void(0)" onclick="results()" class="card-link">Historia wyników</a>
+                    </div>
+
+                    <div class="card-body questions d-none" id="question-results">
+                        <h5 class="card-title text-center">Historia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Wyniki ostatnich testów</h6>
+                        <div class="row" id="results">
+                            <div class="col-4 offset-2">
+                                <ol>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                </ol>
+                            </div>
+                            <div class="col-4">
+                                <ol start="6">
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                    <li><b>70%</b></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <p class="card-text" id="average">Średnia ostatnich testów: <strong>BRAK</strong></p>
+                        <a href="javascript:void(0)" onclick="quizMain()" class="card-link">Strona główna</a>
+                    </div>
+
+                    <div class="card-body questions d-none" id="questions">
+                        <h5 class="card-title text-center">Pytanie <span id="question-number">1</span></h5>
+                        <h6 class="card-subtitle mb-2 text-muted" id="question-text">pytanie..</h6>
+                        <div class="row" id="question-promts">
+                            <div class="col-6">
+                                <button class="btn btn-secondary prompt">odp1</button>
+                                <button class="btn btn-secondary prompt">odp2</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-secondary prompt">odp3</button>
+                                <button class="btn btn-secondary prompt">odp4</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row my-1">
+            <div class="col text-center" id="question-nav-buttons">
+                <button class="btn btn-success disabled">Start</button>
+                <button class="btn btn-secondary disabled">Następne</button>
+                <button class="btn btn-warning disabled">Reset</button>
+                <button class="btn btn-danger disabled">Koniec</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="quiz.js"></script>
+</body>
+
+</html>
