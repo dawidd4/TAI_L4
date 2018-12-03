@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
+  posts: [];
+
   constructor() { }
 
   ngOnInit() {
+
+    fetch('../../assets/posts.json')
+      .then(response => response.json())
+      .then(response => { this.posts = response; });
   }
 
 }

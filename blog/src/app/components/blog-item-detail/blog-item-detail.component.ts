@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogComponent } from '../blog/blog.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-item-detail',
