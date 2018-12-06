@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogComponent } from '../blog/blog.component';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,10 +7,28 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./blog-item-detail.component.css']
 })
 export class BlogItemDetailComponent implements OnInit {
+  id: any;
+  post: any;
+  isLoaded = false;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) {
+    activatedRoute.paramMap.subscribe(params => {
+      this.id = params.get('id');
+    });
+  }
 
   ngOnInit() {
+    fetch('../../assets/posts.json')
+      .then(response => response.json())
+      .then(response => {
+        response.forEach(element => {
+          // tslint:disable-next-line:triple-equals
+          if (element.id == this.id) {
+            this.post = element;
+            this.isLoaded = true;
+          }
+        });
+      });
   }
 
 }

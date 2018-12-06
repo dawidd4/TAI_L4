@@ -15,7 +15,8 @@ export class BlogComponent implements OnInit {
 
     fetch('../../assets/posts.json')
       .then(response => response.json())
-      .then(response => { this.posts = response; });
+      .then(response => { this.posts = response;
+      });
   }
 
 }

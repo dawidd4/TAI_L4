@@ -5,10 +5,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="">Strona Główna</a>
-      <a class="nav-item nav-link" href="javascript:void(0)">Blog</a>
-      <a class="nav-item nav-link" href="/quiz">Quiz</a>
-      <a class="nav-item nav-link" href="/contact">Kontakt</a>
+      <a class="nav-item nav-link" routerLink="/" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}"  href="">Strona Główna</a>
+      <a class="nav-item nav-link" routerLink="/blog" routerLinkActive="active" href="/blog">Blog</a>
+      <a class="nav-item nav-link" routerLink="/quiz" routerLinkActive="active" href="/quiz">Quiz</a>
+      <a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active" href="/contact">Kontakt</a>
     </div>
   </div>
 </nav>

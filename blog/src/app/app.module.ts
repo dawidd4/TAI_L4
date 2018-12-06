@@ -19,8 +19,10 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'blog', component: BlogComponent },
   { path: 'quiz', component: QuizComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'blog/details/:id', component: BlogItemDetailComponent }
 ];
 
 

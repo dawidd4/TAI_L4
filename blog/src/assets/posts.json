@@ -1,14 +1,17 @@
 [{
+    "id": 1,
     "text": "Nowa karta graficzna nVidia z serii RTX 20x0",
     "image": "https://www.purepc.pl/image/felieton/2018/12/01_nvidia_geforce_rtx_20x0_mobile_czego_oczekujemy_po_laptopach_2.jpg",
     "content": "NVIDIA niedawno wystartowała z nową serią kart graficznych GeForce RTX 2000. Na początku dostaliśmy najwydajniejsze konsumenckie modele, czyli RTX 2080 Ti oraz RTX 2080. Nieco później do rodziny dołączył nieco słabszy akcelerator RTX 2070 i wydawało się, że pozostaje już tylko czekać na jeszcze tańsze układy. Niestety, jak wiemy, Zielonym nie spieszy się specjalnie do wydania bardziej mainstreamowych kart."
   },
   {
+    "id": 2,
     "text": "Jaki zestaw komputerowy kupić",
     "image": "https://8.allegroimg.com/original/012952/f029e69a4d99b1a8fa59be106518",
     "content": "Jaki komputer kupić? Który procesor wybrać? Jakie karty graficzne i procesory są najlepsze? Podobne pytania zalewają fora internetowe, ponieważ sytuacja na rynku podzespołów potrafi się błyskawicznie zmienić i ciężko nadążyć za nowinkami, które wywracają do góry nogami wcześniejsze koncepcje. Przed zakupem komputera przeciętny użytkownik staje w obliczu poważnych problemów, jakie są nierozerwalnie związane z jego pieniędzmi, co powinno stanowić silną motywację do szukania najlepszych rozwiązań."
   },
   {
+    "id": 3,
     "text": "Lioncast LM50: symetryczna mysz dla graczy z sensorem PMW3360",
     "image": "https://www.purepc.pl/image/news/2018/11/30_lioncast_lm50_symetryczna_mysz_dla_graczy_z_sensorem_pmw3360_0.jpg",
     "content": "Lioncast, niemiecki producent sprzętu komputerowego, wprowadza na rynek myszkę LM50: zaprojektowaną do e-sportowych starć - jak twierdzi - na najwyższym poziomie. Jej prostą konstrukcję oraz wyprofilowany kształt, a także sprawdzony optyczny sensor mają docenić gracze marzący nawet o profesjonalnej karierze e-sportowca. To pierwsza gamingowa myszka tego producenta zaprojektowana z myślą o zawodowych graczach."
